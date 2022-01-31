@@ -9,16 +9,13 @@
     <div id="root">
       <h1>Sorocifrado</h1>
     </div>
-        <h3>Bienvenidx. Esta es una plataforma para codificar o decodificar un mensaje por si necesitas pedir ayuda a alguien de tu círculo de confianza sin que alguien más sepa el contenido del mensaje.</h3>
-          <p>Por favor, ingresa tu mensaje en el siguiente espacio:</p>
-              <input type="text" id="textoCifrar" placeholder="Ingresa tu texto a cifrar aquí" required>
-              <input type="number" id="number" placeholder="# de posiciones que deseas cifrar el mensaje"> <!--poner una caja para que el texto que se ha ingresado se muestre ahí. O podría regresar el texto ya cifrado en una alert -->
-              <input type="submit" id="submit">
-              <p>Tu texto cifrado es este:</p><br>
-              <input type="text" id="msnCifrado">
-          <p>Si deseas descifrar un mensaje, por favor, insértalo en el siguiente apartado:</p>
-          <input type="text" form="formulario" id="textoDescifrado" placeholder="Ingresa un texto a descifrar">
-          <input type="submit">
+        <h3>Bienvenidx.<br> Esta es una plataforma para cifrar o descifrar un mensaje por si necesitas pedir ayuda a alguien de tu círculo de confianza sin que alguien más sepa el contenido del mensaje.</h3>
+          <p>Para cifrar o descifrar un mensaje debes de elegir cuántos lugares del alfabeto deseas mover tu texto para que no sea legible para alguien externo</p>
+              <input type="text" id="texto" placeholder="Ingresa tu texto a cifrar o descifrar">
+              <input type="number" id="numero" placeholder="# de posiciones que deseas cifrar el mensaje"><br> <!--poner una caja para que el texto que se ha ingresado se muestre ahí. O podría regresar el texto ya cifrado en una alert -->
+              <button type="button" id="cifrar" class="submit">Cifrar</button>
+              <button type="button" id="descifrar" class="submit">Descifrar</button>
+              <h4 id="resultado">Tu mensaje es este</h4>
     <script src="index.js" type="module"></script>
   </body>
 </html>

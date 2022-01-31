@@ -1,0 +1,47 @@
+.root {
+    background-image: url("./Imagenes/patron-geometrico-gratis.jpg");
+    height: 100vh;
+    background-size: contain;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    background-color: #005b4f;
+    justify-content: center;
+    }
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: #61092f;
+    padding: 15px;
+    height: 20px;
+    //hacerlo mas ancho 
+}
+
+input {
+    padding: 20px;
+    color: #546e7a;
+    border-radius: 7px;
+    border-bottom-left-radius: 0;
+    margin: 15px;    
+    background-color: #ffddc1;
+}
+
+.submit {
+    color: blanchedalmond;
+    background-color: #b39ddb;
+    border-color:seagreen; 
+    padding: 10px 30px
+    display: inline;
+    background-color:rgb(182, 128, 226);
+    padding: 15px;
+    margin: 10px;
+}
+
+h3, p {
+    padding: 25px 50px;
+    color: #c68400;
+}
+
+
