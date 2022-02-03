@@ -2,6 +2,13 @@
 const cipher = {
   encode: (offset,textoCifrar) => {
      let cipherMess='';
+     try {
+       if (textoCifrar == '' || textoCifrar == undefined) {
+         throw new TypeError('Inserta caracteres válidos (únicamente letras)');
+      } 
+    } catch(err) {
+          alert(err);    
+    } 
       for (let i=0; i<textoCifrar.length; i++){
         //primero meter charCodeAt para hacerlo una cadena, unas líneas más abajo usar fromCharCode para retornar la letra no el número
         let asciiNum = textoCifrar.charCodeAt(i);
@@ -10,16 +17,23 @@ const cipher = {
             let ciphLetter = String.fromCharCode(ciphAscii);
               cipherMess += ciphLetter;    
     console.log(asciiNum)
-        } else {
+    } else {
             cipherMess = cipherMess + textoCifrar[i];  
         }
     } 
     return cipherMess; 
-     }, 
+  }, 
 
   decode: (offset,textoDescifrar) => {
     let messDesc='';
-    for (let i=0; i<textoDescifrar.length; i++){
+    try {
+      if (textoDescifrar == '' || textoDescifrar == undefined) {
+        throw new TypeError('Inserta caracteres válidos (únicamente letras)');
+      }
+   } catch(err) {
+         alert(err);    
+   }
+       for (let i=0; i<textoDescifrar.length; i++){
       let asciiDec = textoDescifrar.charCodeAt(i);
         if (asciiDec >= 65 && asciiDec <= 90){
           let asciiDecode = ((asciiDec - 90 - parseInt(offset)) %26 + 90);
@@ -28,9 +42,8 @@ const cipher = {
       } else {
         messDesc = messDesc + textoDescifrar[i];
       }
-    }
-  return messDesc; 
-  }
+    } 
+    return messDesc;
+  } 
 }
-
 export default cipher

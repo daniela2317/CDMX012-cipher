@@ -1,11 +1,11 @@
 .root {
-    background-image: url("./Imagenes/patron-geometrico-gratis.jpg");
     height: 100vh;
     background-size: contain;
 }
 
 body {
     font-family: "DM Sans", sans-serif;
+    /*background-image: url("./Imagenes/patron-geometrico-gratis.jpg");*/
     text-align: center;
     background-color: #005b4f;
     justify-content: center;
